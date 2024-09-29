@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Registro con Node + JWT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<main class="form-signin shadow-lg mb-5">
+    <form id="formRegister" action="/register" method="POST">
+        <img class="mb-4" src="img/logo.png" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal text-center">Registrarse</h1>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre completo" required>
+            <label for="name">Nombre completo</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="user" name="user" placeholder="Usuario" required>
+            <label for="user">Usuario</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="pass" name="pass" placeholder="Contraseña" required>
+            <label for="pass">Contraseña</label>
+        </div>
+
+        <button class="btn btn-lg btn-bd-primary w-100 py-2" type="submit">Registrar</button>
+        <br>
+        <a href="#" type="button" class="w-100 btn btn-lg btn-cancel mt-2">Cancelar</a>
+    </form>
+</main>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

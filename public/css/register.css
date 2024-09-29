@@ -1,0 +1,53 @@
+/* Estilos personalizados para el formulario formal */
+body {
+    background-color: #e9ecef; /* Fondo gris claro */
+}
+
+.form-signin {
+    width: 400px; /* Ancho del formulario */
+    margin: auto; /* Centrado */
+    padding: 2rem; /* Padding interno */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo blanco */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.form-floating input {
+    border-radius: 0.25rem; /* Bordes redondeados para los inputs */
+    border: 1px solid #ced4da; /* Borde gris claro */
+    transition: border-color 0.2s; /* Transición suave al interactuar */
+}
+
+.form-floating input:focus {
+    border-color: #495057; /* Borde gris oscuro al hacer foco */
+    box-shadow: 0 0 0.2rem rgba(76, 175, 80, 0.25); /* Sombra suave al foco */
+}
+
+.form-floating label {
+    color: #495057; /* Color gris oscuro para las etiquetas */
+}
+
+.btn-bd-primary {
+    font-weight: 600; /* Peso del texto */
+    color: #ffffff; /* Texto blanco */
+    background-color: #004085; /* Color azul para el botón */
+    border: none; /* Sin borde */
+    border-radius: 0.25rem; /* Bordes redondeados */
+}
+
+.btn-bd-primary:hover,
+.btn-bd-primary:active {
+    background-color: #004085; /* Un tono más oscuro para el hover */
+}
+
+.btn-cancel {
+    color: #ffffff; /* Texto blanco para el botón cancelar */
+    background-color: #495057; /* Color rojo para el botón */
+    border: none; /* Sin borde */
+    border-radius: 0.25rem; /* Bordes redondeados */
+}
+
+.btn-cancel:hover,
+.btn-cancel:active {
+    background-color: #495057; /* Un tono más oscuro en hover */
+}

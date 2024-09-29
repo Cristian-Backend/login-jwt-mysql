@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>LOGIN CON NODE + JWT</title>
+
+
+<!-- Boostrap core css -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href="css/sign-in.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body class="bg-body-tertiary"> <!-- Cambiado el 'd-flex align-items-center' -->
+
+<main class="form-signin w-100 m-auto text-center shadow-lg p-3 mb-5" >
+  <form id="formLogin" action="/login" method="POST">
+    <img class="mb-4" src="img/logo.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Sign in</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="user" name="user" placeholder="user">
+      <label for="user">User</label>
+    </div>
+   
+    <div class="form-floating mt-3" >
+      <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+      <label for="pass">Password</label>
+    </div>
+
+    <div class="form-check text-start "></div>
+    <button class="btn btn-lg btn-primary w-100 py-2" type="submit">Login</button>
+  </form>
+  <br>
+  <a href="/register" type="button" class="w-100 btn btn-lg btn-bd-primary">Registrarse</a>
+</main>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Pasamos las variables sweet alert -->
+<% if (typeof alert !== 'undefined' && alert) { %>
+  <script>
+    Swal.fire({
+      title: '<%= alertTitle %>',
+      text: '<%= alertMessage %>',
+      icon: '<%= alertIcon %>',
+      showConfirmButton: <%= showConfirmButton %>,
+      timer: <%= timer %>
+    }).then(() => {
+      window.location = '/<%= ruta %>';
+    });
+  </script>
+<% } %>
+
+
+</body>
+</html>
